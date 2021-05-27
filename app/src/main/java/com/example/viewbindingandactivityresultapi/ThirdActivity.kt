@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.viewbindingandactivityresultapi.databinding.ActivitySecondBinding
 import com.example.viewbindingandactivityresultapi.databinding.ActivityThirdBinding
 
 class ThirdActivity : AppCompatActivity() {
@@ -18,13 +17,11 @@ class ThirdActivity : AppCompatActivity() {
         setContentView(mThirdBinding.root)
     }
 
-    fun onResultClick2(view : View){
-
-        val result =
-            Intent().putExtra(Contract.contract2, mThirdBinding.etText.text.toString())
-        setResult(Activity.RESULT_OK, result)
+    fun onResultClick2(view : View) {
+        val intent = Intent()
+        intent.putExtra(Contract.contract1, mThirdBinding.etText.text.toString())
+        intent.putExtra(Contract.contract2, mThirdBinding.etTextTwo.text.toString())
+        setResult(Activity.RESULT_OK, intent)
         finish()
-
     }
-
 }

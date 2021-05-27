@@ -19,7 +19,6 @@ class SecondActivity : AppCompatActivity() {
     }
 
     fun onResultClick1(view : View){
-
         val result =
             Intent().putExtra(Contract.contract1, mSecondBinding.etText.text.toString())
         setResult(Activity.RESULT_OK, result)
