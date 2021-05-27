@@ -39,13 +39,13 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun onSecondActivityRequestClick(view : View){
-        launcher1.launch()
-    }
-
-    fun onThirdActivityRequestClick(view : View){
-        launcher2.launch()
-    }
+//    fun onSecondActivityRequestClick(view : View){
+//        launcher1.launch()
+//    }
+//
+//    fun onThirdActivityRequestClick(view : View){
+//        launcher2.launch()
+//    }
 
 
 }
